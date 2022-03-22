@@ -5,6 +5,7 @@ public class Echo {
 =======
     public static void main(String[] args) {
 
+
     }
 >>>>>>> 68c2346 (3.2. Загрузка файлов на github [#243562 #278272])
 }
