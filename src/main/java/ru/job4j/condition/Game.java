@@ -6,10 +6,10 @@ public class Game {
             System.out.println("Start - super mario");
         }
         if ("tanks".equals(name)) {
-            System.out.println("Старт - танки");
+            System.out.println("Start - tanks");
         }
         if ("tetris".equals(name)) {
-            System.out.println("Старт - тетрис");
+            System.out.println("Start - tetris");
         }
     }
 
