@@ -1,10 +1,10 @@
 package ru.job4j.condition;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Assert;
 
-class ChessBoardTest {
+public class ChessBoardTest {
 
     @Test
     public void wayIs5() {
@@ -14,7 +14,7 @@ class ChessBoardTest {
         int y2 = 2;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 5;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -25,7 +25,7 @@ class ChessBoardTest {
         int y2 = 7;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 7;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -36,7 +36,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -47,7 +47,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -58,7 +58,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -69,7 +69,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -80,7 +80,7 @@ class ChessBoardTest {
         int y2 = -1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -91,7 +91,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -102,7 +102,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -113,7 +113,7 @@ class ChessBoardTest {
         int y2 = 1;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 
     @Test
@@ -124,6 +124,6 @@ class ChessBoardTest {
         int y2 = 10;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
-        assertThat(result).isEqualTo(expected);
+        Assert.assertEquals(expected, result);
     }
 }
