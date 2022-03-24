@@ -8,13 +8,10 @@ public class MultipleSwitchWeek {
             case "Среда", "Wednesday" -> 3;
             case "Четверг", "Thursday" -> 4;
             case "Пятница", "Friday" -> 5;
-            case "Субота", "Saturday" -> 6;
+            case "Суббота", "Saturday" -> 6;
             case "Воскресенье", "Sunday" -> 7;
+            /* case */
             default -> -1;
         };
-    }
-
-    public static void main(String[] args) {
-        System.out.println(MultipleSwitchWeek.numberOfDay("Saturday"));
     }
 }
