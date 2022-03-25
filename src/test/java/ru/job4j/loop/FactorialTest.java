@@ -1,23 +1,26 @@
 package ru.job4j.loop;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Assert;
 
 public class FactorialTest {
+
     @Test
-    public void whenCalculateFactorialForFiveThenOneHundredTwenty() {
-        int expected = 120;
+    public void whenwhenCalculateFactorialFor5Then120calc() {
         int n = 5;
-        int out = Factorial.calc(n);
-        assertThat(out).isEqualTo(expected);
+        int expected = 120;
+        int result = Factorial.calc(n);
+        Assert.assertEquals(expected, result);
+
     }
 
     @Test
-    public void whenCalculateFactorialForZeroThenOne() {
-        int expected = 1;
+    public void whenwhenCalculateFactorialFor0Then1calc() {
         int n = 0;
-        int out = Factorial.calc(n);
-        assertThat(out).isEqualTo(expected);
+        int expected = 1;
+        int result = Factorial.calc(n);
+        Assert.assertEquals(expected, result);
+
     }
 }
