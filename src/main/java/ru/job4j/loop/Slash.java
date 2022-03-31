@@ -1,11 +1,11 @@
 package ru.job4j.loop;
 
 public class Slash {
-    public static void draw(int size) {
+    public static void drow(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = row == cell; /* добавить условие для левой диагонали - с левого верхнего угла в правый нижний*/
-                boolean right = row + cell == size - 1; /* добавить условие для правой диагонали - из левого нижнего в правый верхний*/
+                boolean left = row == cell;
+                boolean right = row + cell == size - 1;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
@@ -20,9 +20,9 @@ public class Slash {
     }
 
     public static void main(String[] args) {
-        System.out.println("Draw by 3");
-        draw(3);
-        System.out.println("Draw by 5");
-        draw(5);
+        System.out.println("Drow by 3");
+        drow(3);
+        System.out.println("Drow by 5");
+        drow(5);
     }
 }
