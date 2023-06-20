@@ -12,10 +12,11 @@ public class FactorialTest {
         int out = Factorial.calc(n);
         assertThat(out).isEqualTo(expected);
     }
+
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
-        int expected =1;
-        int n =0;
+        int expected = 1;
+        int n = 0;
         int out = Factorial.calc(n);
         assertThat(out).isEqualTo(expected);
     }
