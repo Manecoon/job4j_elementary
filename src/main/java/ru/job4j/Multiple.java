@@ -11,4 +11,8 @@ public class Multiple {
         System.out.println("1*8=8");
         System.out.println("1*9=9");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e8ad5b8 (4.1. Разбор первой программы. [#159033])

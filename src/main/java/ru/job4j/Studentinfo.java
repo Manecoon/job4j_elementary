@@ -1,8 +1,8 @@
 package ru.job4j;
 
-public class Studentinfo {
+public class StudentInfo {
     public static void main(String[] args) {
-        System.out.println("Stanislav Shevchenko");
-        System.out.println("27.01.1985");
+        System.out.println("Stas Sh");
+        System.out.println("21.02.1985");
     }
 }
