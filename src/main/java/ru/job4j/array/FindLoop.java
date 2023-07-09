@@ -17,4 +17,7 @@ public class FindLoop {
         System.out.println(indexOf(data, 10));
     }
 
+    public static int indexInRange(int[] data, int min, int i, int i1) {
+        return min;
+    }
 }
