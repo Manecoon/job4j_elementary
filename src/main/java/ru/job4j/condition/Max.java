@@ -6,8 +6,11 @@ public class Max {
         return result;
     }
 
-    public static void main(String[] args) {
-        int msg = Max.max(1, 2);
-        System.out.println("Большее число: " + msg);
+    public static int max(int left, int right, int middle) {
+        return max(left, max(right, middle));
+    }
+
+    public static int max(int left, int right, int middle, int top) {
+        return max(left, max(right, middle, top));
     }
 }

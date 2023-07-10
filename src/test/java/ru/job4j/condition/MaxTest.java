@@ -7,29 +7,32 @@ import org.junit.Assert;
 public class MaxTest {
 
     @Test
-    public void max2() {
-        int left = 1;
+    public void max4() {
+        int left = 4;
         int right = 2;
         int result = Max.max(left, right);
-        int expected = 2;
+        int expected = 4;
         Assert.assertEquals(result, expected);
     }
 
     @Test
     public void max7() {
-        int left = 7;
-        int right = 5;
-        int result = Max.max(left, right);
+        int left = 5;
+        int right = 7;
+        int middle = 3;
+        int result = Max.max(left, Max.max(right, middle));
         int expected = 7;
         Assert.assertEquals(result, expected);
     }
 
     @Test
-    public void max5() {
-        int left = 5;
-        int right = 5;
-        int result = Max.max(left, right);
-        int expected = 5;
+    public void max8() {
+        int left = 1;
+        int right = 8;
+        int middle = 6;
+        int top = 4;
+        int result = Max.max(left, Max.max(right, Max.max(middle, top)));
+        int expected = 8;
         Assert.assertEquals(result, expected);
     }
 }
