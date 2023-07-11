@@ -18,4 +18,3 @@ public class Point {
         return sqrt(pow(that.x, 2 - this.x) + pow(that.y, 2 - this.y) + pow(that.z, 2 - this.z));
     }
 }
-
