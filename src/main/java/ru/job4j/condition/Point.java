@@ -15,6 +15,6 @@ public class Point {
     }
 
     public double distance3d(Point that) {
-        return sqrt(pow(that.x, 2 - this.x) + pow(that.y, 2 - this.y) + pow(that.z, 2 - this.z));
+        return sqrt(pow((that.x - this.x),2) + pow((that.y - this.y),2) + pow((that.z - this.z),2));
     }
 }

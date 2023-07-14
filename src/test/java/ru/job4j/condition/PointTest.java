@@ -17,20 +17,20 @@ public class PointTest {
     }
 
     @Test
-    public void when530to234then4() {
+    public void when530to234then5() {
         Point a = new Point(5, 3, 0);
         Point b = new Point(2, 3, 4);
         double dist = a.distance3d(b);
-        double expected = 4;
+        double expected = 5;
         assertThat(dist).isCloseTo(expected, offset(0.2));
     }
 
     @Test
-    public void when811to632then2() {
+    public void when811to632then3() {
         Point a = new Point(8, 1, 1);
         Point b = new Point(6, 3, 2);
         double dist = a.distance3d(b);
-        double expected = 2;
+        double expected = 3;
         assertThat(dist).isCloseTo(expected, offset(0.3));
     }
 }
